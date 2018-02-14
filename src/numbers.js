@@ -1,5 +1,5 @@
 export const add = (a, b) => {
-  // your code here
+  return a + b;
 };
 
 export const subtract = (a, b) => {
