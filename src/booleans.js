@@ -1,59 +1,139 @@
 export const negate = (a) => {
-  // your code here
+  if(a){
+    return false;
+  }
+  else{
+    return true;
+  }
 };
 
 export const both = (a, b) => {
-  // your code here
+  if(a && b){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const either = (a, b) => {
-  // your code here
+  if(a || b){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const none = (a, b) => {
-  // your code here
+  if(!a && !b){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const one = (a, b) => {
-  // your code here
+  if((a && !b) || (!a && b)){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const truthiness = (a) => {
-  // your code here
+  if(a){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const isEqual = (a, b) => {
-  // your code here
+  if(a === b){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const isGreaterThan = (a, b) => {
-  // your code here
+  if(a > b){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  if(a <= b){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const isOdd = (a) => {
-  // your code here
+  if(a % 2 === 0){
+    return false;
+  }
+  else{
+    return true;
+  }
 };
 
 export const isEven = (a) => {
-  // your code here
+  if(a % 2 === 0){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const isSquare = (a) => {
-  // your code here
+  if(Math.sqrt(a) % 1 === 0){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const startsWith = (char, string) => {
-  // your code here
+  if(string.charAt(0) === char){
+    return true;
+  }
+  else{
+    return false;
+  }
 };
 
 export const containsVowels = (string) => {
-  // your code here
+  const vowelsArray = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'];
+  let i;
+  for(i = 0; i < string.length; i++){
+    if(vowelsArray.indexOf(string.charAt(i)) >= 0){
+      return true;
+      exit;
+    } 
+  }
+  return false;
 };
 
 export const isLowerCase = (string) => {
-  // your code here
+  let i;
+  for(i = 0; i < string.length; i++){
+    if(string.charAt(i).toLowerCase() != string.charAt(i)){
+      return false;
+      exit;
+    }
+  }
+  return true;
 };
